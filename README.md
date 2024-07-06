@@ -4,15 +4,16 @@ This project aims to develop machine learning models to classify Alzheimer's dis
 
 ## Project Structure
 
-- **`Dataset1/`**: Directory containing MRI images for the first dataset.
-- **`Dataset2/`**: Directory containing MRI images for the second dataset.
 - **`alzheimers_detection.ipynb`**: Jupyter Notebook containing the Python code for data preprocessing, model training, evaluation, and visualization.
 - **`results/`**: Directory containing evaluation results, such as accuracy scores, confusion matrices, and classification reports.
+- **`project_schematic/`**: Gives the flow of the project about how the data has been preprocessed, augemented and the different models applied.
+- **`report/`**: Gives explanation to all the models applied on the dataset along with satisfactory evaluation metrics comparing the accuracy and loss for each model.
+  
 
 ## Project Schematic
 
 1. **Data Preprocessing**:
-   - MRI images from two datasets (`Dataset1` and `Dataset2`) are loaded and preprocessed.
+   - MRI images from the dataset are grayscaled and preprocessed using Prinicipal Component Analysis.
    - Data augmentation techniques such as brightness adjustment and adding Gaussian noise are applied to enhance the training dataset.
 
 2. **Model Training**:
@@ -37,13 +38,11 @@ This project aims to develop machine learning models to classify Alzheimer's dis
 git clone https://github.com/your-username/alzheimers-detection.git
 ```
 
-2. **Download and Preprocess the Dataset:**
+2. **Download the Dataset**
 
-1. Place the MRI images in the `Dataset1/` and `Dataset2/` directories.
-2. Run the data preprocessing scripts to load and augment the data.
+Load the dataset from the online Kaggle platform : [Dataset Link](https://www.kaggle.com/datasets/sachinkumar413/alzheimer-mri-dataset)
 
 3. **Run the Jupyter Notebook:**
-
 ```bash
 jupyter notebook alzheimers_detection.ipynb
 ```
